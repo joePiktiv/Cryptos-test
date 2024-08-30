@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import NavBar from './Components/NavBar';
+import Home from './Components/Home';
+import Cryptos from './Components/Cryptos';
 
 function App() {
+  const [content, setContent] = useState<"Home"|"Cryptos">("Home");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header" />
+      <NavBar selector = {setContent}/>
+      <div>
+        {content === "Home" && <Home/>}
+        {content === "Cryptos" && <Cryptos/>}
+      </div>
     </div>
   );
 }

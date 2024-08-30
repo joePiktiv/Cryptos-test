@@ -14,8 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: white;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,8 +24,97 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.navbar {
+  background-color: white;
+  min-height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 1em;
+}
+
+.hover-hand:hover {
+  cursor: pointer;
+}
+
+.navbar-content {
+  min-width: 40vw;
+  /* background-color: #61dafb; */
+  display: flex;
+  justify-content: space-around;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.crypto {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center ;
+  align-items: center;
+}
+
+.crypto-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting
+{
+  align-self: self-start;
+  margin-left: 10%;
+}
+
+.calendar-container
+{
+  height: 30vh;
+  min-height: 350px;
+}
+
+.message 
+{
+  display: flex;
+  /* flex-direction: row; */
+  width: 60%;
+  min-width: 450px;
+  margin: auto;
+  justify-content: space-around;
+
+}
+
+.table-item
+{
+  border: 1px solid black;
+  width: 200px;
+  padding: 0.5em 0;
+}
+
+.table-header
+{
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  min-width: 600px;
+  align-self: center;
+  justify-content: center;
+}
+
+.table-body
+{
+  height: 40vh;
+  min-height: 20em;
+  overflow: scroll;
 }
 
 @keyframes App-logo-spin {
